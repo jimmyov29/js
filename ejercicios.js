@@ -93,6 +93,12 @@
 
 //ejercicio 5
 
+
+// const revertirCadena=(cadena="")=> console.log(cadena.split("").reverse().join(""));
+
+
+// revertirCadena("Hola mundo")
+
 // const invertirCadena=(cadena = "") => (!cadena) ? console.warn("No ingresaste cadena de texto")
 // : console.log(cadena.split("").reverse().join(""));
 
@@ -103,6 +109,24 @@
 
 
 //ejercicio 6
+
+// const contarPalabrasRepetidas=( cadena="", palabra ="")=> {
+//     let contador= 0, i=0;
+    
+//     while(i!== -1){
+//         i =cadena.indexOf(palabra,i);
+//         if(i!==-1){
+//             i++;
+//             contador++;
+//         }
+
+//     }
+//     return(console.log(`la palabra ${palabra} se repitio ${contador}`))
+// }
+
+// contarPalabrasRepetidas("hola hola hola","hola")
+
+
 
 // const textoEnCadena = (cadena = "", palabra ="")=>{
 //     if(cadena === "") return console.log("No ingreso la cadena");
@@ -231,7 +255,7 @@
 //     let divisible = false;
 
 //     for(let i=2; i<numero ; i++ ){
-//         if((numero%i)===0){
+//         if((numero%i)===0)
 //             divisible = true;
 //             break;
 
