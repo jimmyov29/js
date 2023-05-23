@@ -71,7 +71,7 @@
 
 // const repetirTexto=(texto="",veces =undefined)=>{
 //     if(!texto) return console.log("La cadena viene vacia");
-    
+
 //     if(veces === undefined) return console.log("No ingreso la cantidad de veces");
 
 //     if(veces === 0) return console.log("No puede ser 0");
@@ -81,7 +81,7 @@
 //     for(let i = 1; i<= veces; i++){
 //         console.log(`${texto}, ${i}`)
 //     }
-    
+
 
 // }
 
@@ -93,6 +93,11 @@
 
 //ejercicio 5
 
+// const revertirCadena=(cadena)=>{
+//     console.log(cadena.split("").reverse().join(""));
+// }
+
+// revertirCadena("hola Mundo")
 
 // const revertirCadena=(cadena="")=> console.log(cadena.split("").reverse().join(""));
 
@@ -109,10 +114,29 @@
 
 
 //ejercicio 6
+const contarPalabrasRepetidas=(cadena, palabra)=>{
+    let contador=0;
+    cadena= cadena.split(" ");
+    for(let i=0;i<cadena.length;i++){
+        if(cadena[i]===palabra)
+        {
+            contador++;
+        }
+        // else{
+        //     continue;
+        // }
+    }
+    console.log(`la palabra "${palabra}" esta ${contador} veces`);
+
+
+}
+
+contarPalabrasRepetidas("cuantas palabras hay hay","hay");
+
 
 // const contarPalabrasRepetidas=( cadena="", palabra ="")=> {
 //     let contador= 0, i=0;
-    
+
 //     while(i!== -1){
 //         i =cadena.indexOf(palabra,i);
 //         if(i!==-1){
@@ -130,7 +154,7 @@
 
 // const textoEnCadena = (cadena = "", palabra ="")=>{
 //     if(cadena === "") return console.log("No ingreso la cadena");
-    
+
 //     if(palabra === "") return console.log("No ingreso la palabra");
 
 //     let i=0, contador = 0;
@@ -206,7 +230,7 @@
 //     numero = numero.toString();
 //     let alReves = numero.split("").reverse().join("");
 
-//     (numero === alReves)? console.log(" si es un numero capicua"): console.log(" no es un numero capicua");  
+//     (numero === alReves)? console.log(" si es un numero capicua"): console.log(" no es un numero capicua");
 
 // }
 
@@ -229,10 +253,10 @@
 //             //tambien se puede poner factorial*=i;
 //         }
 //         return console.log(`el factorial de ${numero} es ${factorial}` );
-//     } 
+//     }
 //     else {
 //         console.log("El numero no puede ser 0 o un numero negativo");
-        
+
 //     }
 // }
 
@@ -259,13 +283,13 @@
 //             divisible = true;
 //             break;
 
-//         } 
+//         }
 //     }
 
 //     return(divisible)
 //     ?console.log(`El numero ${numero} no es primo`)
 //     :console.log(`El numero ${numero} si es primo`);
-    
+
 // }
 
 
@@ -287,7 +311,7 @@
 //     return (numero%2 ===0)
 //     ?console.log(`El numero ${numero} es PAR`)
 //     :console.log(`El numero ${numero} es IMPAR`)
-    
+
 
 // }
 
