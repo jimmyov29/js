@@ -114,41 +114,22 @@
 
 
 //ejercicio 6
-const contarPalabrasRepetidas=(cadena, palabra)=>{
-    let contador=0;
-    cadena= cadena.split(" ");
-    for(let i=0;i<cadena.length;i++){
-        if(cadena[i]===palabra)
-        {
-            contador++;
-        }
-        // else{
-        //     continue;
-        // }
-    }
-    console.log(`la palabra "${palabra}" esta ${contador} veces`);
-
-
-}
-
-contarPalabrasRepetidas("cuantas palabras hay hay","hay");
-
-
-// const contarPalabrasRepetidas=( cadena="", palabra ="")=> {
-//     let contador= 0, i=0;
-
-//     while(i!== -1){
-//         i =cadena.indexOf(palabra,i);
-//         if(i!==-1){
-//             i++;
+// const contarPalabrasRepetidas=(cadena, palabra)=>{
+//     let contador=0;
+//     cadena= cadena.split(" ");
+//     for(let i=0;i<cadena.length;i++){
+//         if(cadena[i]===palabra)
+//         {
 //             contador++;
 //         }
-
+//         // else{
+//         //     continue;
+//         // }
 //     }
-//     return(console.log(`la palabra ${palabra} se repitio ${contador}`))
-// }
+//     console.log(`la palabra "${palabra}" esta ${contador} veces`);
 
-// contarPalabrasRepetidas("hola hola hola","hola")
+
+// }
 
 
 
@@ -178,6 +159,15 @@ contarPalabrasRepetidas("cuantas palabras hay hay","hay");
 ///ejercicio 7 palindromo
 
 
+// const palindromo =(palabra)=>{
+//     let palabraAlReves = palabra.split("").reverse().join("");
+//     (palabra===palabraAlReves) ? console.log("es un palindromo"):console.log("No es un palindromo");
+
+// }
+
+// palindromo("anas");
+
+
 // const palindromo= (cadena ="")=>{
 //     if(!cadena) return console.log("Ingresa una palabra");
 
@@ -196,15 +186,18 @@ contarPalabrasRepetidas("cuantas palabras hay hay","hay");
 
 //ejercicio 8 programa que elimine cierto patron de caracteres de un texto
 
+// const eliminarPatrones=(palabra, patronAEliminar)=>{
+//     let palabraSinPatron = palabra.split(patronAEliminar).join("");
+//     console.log(palabraSinPatron);
+// }
+// // const eliminarCaracteres= (texto= "", patron="")=> (!texto)?
+// // console.log("No se escribio la cadena"):(!patron)?
+// // console.log("No se escribio el patron"):
+// // console.log(texto.replace(new RegExp(patron, "ig"), ""));
 
-// const eliminarCaracteres= (texto= "", patron="")=> (!texto)?
-// console.log("No se escribio la cadena"):(!patron)?
-// console.log("No se escribio el patron"):
-// console.log(texto.replace(new RegExp(patron, "ig"), ""));
+// // eliminarCaracteres("a1,a2,a3,a4", "a");
 
-// eliminarCaracteres("a1,a2,a3,a4", "a");
-
-
+// eliminarPatrones("a1,a2,a2,a4", "2");
 
 
 
