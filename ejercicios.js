@@ -212,13 +212,12 @@
 
 
 
-
 //ejercicio 10
 
 
 // const capicua = (numero=0)=>{
 //     if(!numero) return console.log("No ingresaste un numero");
-//     if(typeof numero !== "number") return console.log(`el numero ${numero} NO es un numero`);
+//     if(typeof numero !== "number") return console.log(`la cadena ${numero} NO es un numero`);
 
 //     numero = numero.toString();
 //     let alReves = numero.split("").reverse().join("");
@@ -235,6 +234,17 @@
 
 
 //ejercicio 11 factorial
+
+// const factorial=(numero)=>{
+
+//     let fnumber=1;
+//     for(let i=1; i<=numero;i++){
+//         fnumber =fnumber*i;
+//     }
+//     console.log(fnumber);
+// }
+
+// factorial(9)
 
 
 // const factorial=(numero = undefined)=>{
