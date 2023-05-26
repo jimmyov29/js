@@ -190,14 +190,16 @@
 //     let palabraSinPatron = palabra.split(patronAEliminar).join("");
 //     console.log(palabraSinPatron);
 // }
-// // const eliminarCaracteres= (texto= "", patron="")=> (!texto)?
-// // console.log("No se escribio la cadena"):(!patron)?
-// // console.log("No se escribio el patron"):
-// // console.log(texto.replace(new RegExp(patron, "ig"), ""));
 
-// // eliminarCaracteres("a1,a2,a3,a4", "a");
 
-// eliminarPatrones("a1,a2,a2,a4", "2");
+// // // const eliminarCaracteres= (texto= "", patron="")=> (!texto)?
+// // // console.log("No se escribio la cadena"):(!patron)?
+// // // console.log("No se escribio el patron"):
+// // // console.log(texto.replace(new RegExp(patron, "ig"), ""));
+
+// // // eliminarCaracteres("a1,a2,a3,a4", "a");
+
+// eliminarPatrones("a1,b2,a2,a4, a5", "a");
 
 
 
@@ -205,8 +207,6 @@
 // ejercicio 9
 
 // const aleatorio=()=>console.log(Math.round((Math.random()*100)+500))
-
-// aleatorio();
 
 
 
@@ -284,7 +284,6 @@
 //     :console.log(`El numero ${numero} si es primo`);
 
 // }
-
 
 // numeroPrimo(7)
 
