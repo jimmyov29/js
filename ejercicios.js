@@ -282,30 +282,29 @@
 // parOImpar(9);
 
 
-// const numeroPrimo=(numero = undefined)=>{
-//     if(!numero) return console.log("No ingresaste un numero");
+const numeroPrimo=(numero = undefined)=>{
+    if(!numero) return console.log("No ingresaste un numero");
 
-//     if(typeof numero !== "number") return console.log("Tiene que ser una numero");
+    if(typeof numero !== "number") return console.log("Tiene que ser una numero");
 
-//     if(numero <=0) return console.log("El numero debe de ser mayor que 0");
+    if(numero <=0) return console.log("El numero debe de ser mayor que 0");
 
-//     let divisible = false;
+    let divisible = false;
 
-//     for(let i=2; i<numero ; i++ ){
-//         if((numero%i)===0)
-//             divisible = true;
-//             break;
+    for(let i=2; i<numero ; i++ ){
+        if((numero%i)===0)
+            divisible = true;
+            break;
+        }
+    }
 
-//         }
-//     }
+    return(divisible)
+    ?console.log(`El numero ${numero} no es primo`)
+    :console.log(`El numero ${numero} si es primo`);
 
-//     return(divisible)
-//     ?console.log(`El numero ${numero} no es primo`)
-//     :console.log(`El numero ${numero} si es primo`);
+}
 
-// }
-
-// numeroPrimo(7)
+numeroPrimo(7);
 
 
 
