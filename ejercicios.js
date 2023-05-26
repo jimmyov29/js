@@ -272,6 +272,16 @@
 
 /// ejercicio 12   par o impar
 
+
+// const parOImpar=(numero)=>{
+
+//     (numero%2===0)? console.log("Par"): console.log("Impar");
+
+// }
+
+// parOImpar(9);
+
+
 // const numeroPrimo=(numero = undefined)=>{
 //     if(!numero) return console.log("No ingresaste un numero");
 
