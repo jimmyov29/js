@@ -325,20 +325,23 @@
 // numeroPar(2)
 // numeroPar(3)
 
+
+
+////////////temperatura 14 done
  const temperatura=(tem,grado)=>{
     let f =grado.toLowerCase();
     let c= grado.toLowerCase();    
-    if(grado==="c"){
-        let resp =((32*tem) - 32)*(5/9);
-        console.log(`la temperatura de ${tem}F a celcius es ${resp}` );
-    }
     if(grado==="f"){
-        let resp =(tem * (9/5))+32;
-        console.log(`la temperatura de ${tem}C a Fahrenheit es ${resp}` );
+        let resp =(tem - 32)/(1.8);
+        console.log(`la temperatura de ${tem} F a Celcius es ${resp}C` );
+    }
+    if(grado==="c"){
+        let resp =(tem * 1.8)+32;
+        console.log(`la temperatura de ${tem} C a Fahrenheit es ${resp}F` );
     }
     else{
-        console.log("Solo se aceptan los valores de F y C")
+        console.log("Solo se aceptan los valores de f y c")
     }
  }
 
-temperatura(0,"f");
+temperatura(0,"c");
