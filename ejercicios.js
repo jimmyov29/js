@@ -324,3 +324,21 @@
 
 // numeroPar(2)
 // numeroPar(3)
+
+ const temperatura=(tem,grado)=>{
+    let f =grado.toLowerCase();
+    let c= grado.toLowerCase();    
+    if(grado==="c"){
+        let resp =((32*tem) - 32)*(5/9);
+        console.log(`la temperatura de ${tem}F a celcius es ${resp}` );
+    }
+    if(grado==="f"){
+        let resp =(tem * (9/5))+32;
+        console.log(`la temperatura de ${tem}C a Fahrenheit es ${resp}` );
+    }
+    else{
+        console.log("Solo se aceptan los valores de F y C")
+    }
+ }
+
+temperatura(0,"f");
